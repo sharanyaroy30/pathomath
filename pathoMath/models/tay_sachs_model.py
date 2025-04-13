@@ -1,6 +1,7 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import random
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Constants
 GM2_BUILDUUP_RATE = 0.1  # The rate of GM2 buildup (arbitrary units)
@@ -38,6 +39,17 @@ def simulate_tay_sachs(enzyme_activity, mutation_type="normal", time_steps=100, 
 
     return gm2_levels
 
+# Load mutation data from JSON
+def load_mutation_data(file_path="data/mutations.json"):
+    import json
+    with open(file_path) as f:
+        data = json.load(f)
+    return {mutation['type']: mutation['activity_factor'] for mutation in data['mutations']}
+
+# Load gene data from CSV (for future use or gene correlation analysis)
+def load_gene_data(file_path="data/sample_gene_data.csv"):
+    return pd.read_csv(file_path)
+    
 # Plotting function
 def plot_gm2_levels(gm2_levels, title="GM2 Buildup Simulation"):
     plt.plot(gm2_levels)
@@ -45,12 +57,3 @@ def plot_gm2_levels(gm2_levels, title="GM2 Buildup Simulation"):
     plt.xlabel("Time Steps")
     plt.ylabel("GM2 Level")
     plt.show()
-
-import json
-
-# Load mutation data
-def load_mutation_data(file_path="data/mutations.json"):
-    with open(file_path) as f:
-        data = json.load(f)
-    return {mutation['type']: mutation['activity_factor'] for mutation in data['mutations']}
-
