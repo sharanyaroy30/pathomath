@@ -1,6 +1,6 @@
-# rareRithm 💡🧬
+# pathoMath 💡🧬
 
-Welcome to **rareRithm** — a student-led initiative using math and computational biology to model and understand rare congenital diseases.
+Welcome to **pathoMath** — a student-led initiative using math and computational biology to model and understand rare congenital diseases.
 
 👋 I'm Sharanya Roy, a high school student passionate about pediatric medicine, competitive math, and computational biology.
 
