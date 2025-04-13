@@ -56,4 +56,9 @@ def plot_gm2_levels(gm2_levels, title="GM2 Buildup Simulation"):
     plt.title(title)
     plt.xlabel("Time Steps")
     plt.ylabel("GM2 Level")
+
+    # Save plot before showing
+    plt.savefig("models/output_gm2_plot.png", dpi=300, bbox_inches='tight')
+    print("📊 Plot saved to: models/output_gm2_plot.png")
+
     plt.show()
