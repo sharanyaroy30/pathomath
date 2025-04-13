@@ -1,0 +1,6 @@
+Gene Name,Mutation Type,Enzyme Activity,Mutation Effect,Gene Expression Level
+TAY1,normal,1.0,none,5.3
+TAY2,frameshift,0.2,severe,3.7
+TAY3,point mutation,0.6,mild,4.1
+TAY4,normal,1.0,none,6.0
+TAY5,frameshift,0.1,severe,2.9
