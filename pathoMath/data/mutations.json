@@ -1,0 +1,8 @@
+{
+  "mutations": [
+    { "type": "normal", "activity_factor": 1.0 },
+    { "type": "frameshift", "activity_factor": 0.2 },
+    { "type": "nonsense", "activity_factor": 0.5 },
+    { "type": "missense", "activity_factor": 0.75 }
+  ]
+}
