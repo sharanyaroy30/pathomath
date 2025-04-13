@@ -66,3 +66,11 @@ if __name__ == "__main__":
     gm2_data = simulate_tay_sachs(enzyme_activity=1.0, mutation_type="frameshift", time_steps=100, therapy_type="ERT")
     plot_gm2_levels(gm2_data, title="GM2 Buildup in Tay-Sachs with ERT")
 
+if __name__ == "__main__":
+    print("Starting simulation...")
+    gm2_data = simulate_tay_sachs(enzyme_activity=1.0, mutation_type="frameshift", time_steps=100, therapy_type="ERT")
+    print("Simulation complete. Plotting results...")
+    plot_gm2_levels(gm2_data, title="GM2 Buildup in Tay-Sachs with ERT")
+    print("Plotting complete.")
+
+
