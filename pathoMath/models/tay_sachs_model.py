@@ -62,3 +62,7 @@ def plot_gm2_levels(gm2_levels, title="GM2 Buildup Simulation"):
     print("📊 Plot saved to: models/output_gm2_plot.png")
 
     plt.show()
+if __name__ == "__main__":
+    gm2_data = simulate_tay_sachs(enzyme_activity=1.0, mutation_type="frameshift", time_steps=100, therapy_type="ERT")
+    plot_gm2_levels(gm2_data, title="GM2 Buildup in Tay-Sachs with ERT")
+
