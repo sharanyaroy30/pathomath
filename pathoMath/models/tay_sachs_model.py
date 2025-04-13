@@ -45,3 +45,12 @@ def plot_gm2_levels(gm2_levels, title="GM2 Buildup Simulation"):
     plt.xlabel("Time Steps")
     plt.ylabel("GM2 Level")
     plt.show()
+
+import json
+
+# Load mutation data
+def load_mutation_data(file_path="data/mutations.json"):
+    with open(file_path) as f:
+        data = json.load(f)
+    return {mutation['type']: mutation['activity_factor'] for mutation in data['mutations']}
+
